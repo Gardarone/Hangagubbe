@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hangagubbe</string>
+    <string name="about">About</string>
+    <string name="play">Play</string>
+    <string name="enter_a_letter">Enter a letter</string>
+    <string name="submit">Submit</string>
+    <string name="guess">Guess</string>
+    <string name="textview">TextView</string>
+    <string name="invalidguess_length">Your guess must be exactly 1 letter</string>
+    <string name="same_letter">You have already guessed on this letter</string>
+</resources>
