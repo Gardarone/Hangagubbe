@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Hangagubbe</string>
+    <string name="about" translatable="false">OM</string>
+    <string name="play" translatable="false">Spela</string>
+    <string name="enter_a_letter" translatable="false">Skriv en Bokstav</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="guess" translatable="false">Gissa</string>
+    <string name="textview" translatable="false">TextView</string>
+    <string name="invalidguess_length" translatable="false">Din gissning måste var på 1 bokstav</string>
+    <string name="same_letter" translatable="false">Du har redan gissat på den bokstaven</string>
+    <string name="play_again" translatable="false">Spela igen?</string>
+    <string name="welcome_to_hangman" translatable="false">Välkommen till hängagubben</string>
+    <string name="won">Du vann!</string>
+    <string name="lost">Du förlorade</string>
+
+    <string-array name="gissa">
+        <item>utnämning</item>
+        <item>middag</item>
+        <item>godkännande</item>
+        <item>vän</item>
+        <item>form</item>
+        <item>hammare</item>
+        <item>elev</item>
+    </string-array>
+    <string name="right_word">"Du gissade på rätt ord: "</string>
+    <string name="wrong_word">"Ordet du letade efter var: "</string>
+</resources>

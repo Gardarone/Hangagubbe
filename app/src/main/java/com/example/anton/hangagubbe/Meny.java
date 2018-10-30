@@ -3,13 +3,20 @@ package com.example.anton.hangagubbe;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.Locale;
+
 
 public class Meny extends AppCompatActivity {
 
     private Button aboutButton;
     private Button playButton;
+    private TextView welcomeTextView;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +41,18 @@ public class Meny extends AppCompatActivity {
                 openAbout();
             }
         });
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Log.i("PauseResume", "onPause");
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        Log.i("PauseResume", "onResume");
     }
 
     /*

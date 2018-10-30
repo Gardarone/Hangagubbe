@@ -1,11 +1,28 @@
 <resources>
-    <string name="app_name">Hangagubbe</string>
-    <string name="about">About</string>
-    <string name="play">Play</string>
-    <string name="enter_a_letter">Enter a letter</string>
-    <string name="submit">Submit</string>
-    <string name="guess">Guess</string>
-    <string name="textview">TextView</string>
-    <string name="invalidguess_length">Your guess must be exactly 1 letter</string>
-    <string name="same_letter">You have already guessed on this letter</string>
+    <string name="app_name" translatable="false">Hangagubbe</string>
+    <string name="about" translatable="false">About</string>
+    <string name="play" translatable="false">Play</string>
+    <string name="enter_a_letter" translatable="false">Enter a letter</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="guess" translatable="false">Guess</string>
+    <string name="textview" translatable="false">TextView</string>
+    <string name="invalidguess_length" translatable="false">Your guess must be exactly 1 letter</string>
+    <string name="same_letter" translatable="false">You have already guessed on this letter</string>
+    <string name="play_again" translatable="false">Play again?</string>
+    <string name="welcome_to_hangman" translatable="false">Welcome to hangman</string>
+    <string name="won" translatable="false">YOU WON!</string>
+    <string name="lost" translatable="false">YOU LOST</string>
+    <string name="right_word" translatable="false">You guessed the right word: </string>
+    <string name="wrong_word" translatable="false">The word you are looking for is: </string>
+
+
+    <string-array name="gissa">
+        <item>appointment</item>
+        <item>dinner</item>
+        <item>acceptance</item>
+        <item>friend</item>
+        <item>shape</item>
+        <item>hammer</item>
+        <item>student</item>
+    </string-array>
 </resources>
