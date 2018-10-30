@@ -14,6 +14,10 @@
     <string name="lost" translatable="false">YOU LOST</string>
     <string name="right_word" translatable="false">You guessed the right word: </string>
     <string name="wrong_word" translatable="false">The word you are looking for is: </string>
+    <string name="made_by" translatable="false">Made by:</string>
+    <string name="anton" translatable="false">Anton</string>
+    <string name="pictures" translatable="false">Pictures</string>
+    <string name="letter" translatable="false">letter</string>
 
 
     <string-array name="gissa">

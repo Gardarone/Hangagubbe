@@ -24,9 +24,9 @@ public class Meny extends AppCompatActivity {
         setContentView(R.layout.activity_meny);
 
         /*
-        Made the buttons work from the meny
+        Buttons for getting to play the game and info about the game.
          */
-        playButton = (Button) findViewById(R.id.playButton);
+        playButton = findViewById(R.id.playButton);
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +34,7 @@ public class Meny extends AppCompatActivity {
             }
         });
 
-        aboutButton = (Button) findViewById(R.id.aboutButton);
+        aboutButton = findViewById(R.id.aboutButton);
         aboutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

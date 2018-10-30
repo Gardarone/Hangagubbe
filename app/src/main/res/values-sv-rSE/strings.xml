@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Hangagubbe</string>
     <string name="about" translatable="false">OM</string>
     <string name="play" translatable="false">Spela</string>
@@ -26,4 +26,6 @@
     </string-array>
     <string name="right_word">"Du gissade på rätt ord: "</string>
     <string name="wrong_word">"Ordet du letade efter var: "</string>
+    <string name="made_by">Gjord av</string>
+    <string name="anton">Anton</string>
 </resources>

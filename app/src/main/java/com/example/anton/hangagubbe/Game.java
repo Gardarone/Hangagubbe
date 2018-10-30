@@ -1,6 +1,5 @@
 package com.example.anton.hangagubbe;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
+
 
 
 public class Game extends AppCompatActivity {
@@ -58,7 +57,7 @@ public class Game extends AppCompatActivity {
         /*
         Created functions to the buttons in the game.
          */
-        guessButton = (Button) findViewById(R.id.guessButton);
+        guessButton = findViewById(R.id.guessButton);
         guessLetter = findViewById(R.id.guessLetterEditText);
         guessButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +68,12 @@ public class Game extends AppCompatActivity {
     }
 
 
-
+    /*
+    Checking if the input is valid or not.
+    Checking if the letter has been used or not and if the input is more then 1 letter
+    Printing out to player if those conditions has been meet with a "warning"
+    If won/loss takes you to Finishscreen and shows a message
+     */
     public void guess(String guess) {
         if (guess.length() != 1) {
             Toast.makeText(getApplicationContext(), R.string.invalidguess_length, Toast.LENGTH_LONG).show();
@@ -103,10 +107,17 @@ public class Game extends AppCompatActivity {
         }
     }
 
+
+    /*
+    Updates the word if player gets a letter right.
+     */
     public void updateAnswerView(){
         wordGuessText.setText(getCurrentResult());
     }
 
+    /*
+    Builds up the word and mask it for the player
+     */
     public String getCurrentResult(){
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i <word.length() ; i++) {
@@ -121,6 +132,9 @@ public class Game extends AppCompatActivity {
         return sb.toString();
     }
 
+    /*
+    Checks if the player has won
+     */
     public boolean hasWon() {
         for (int i = 0; i < word.length() ; i++) {
             if (!letterList.contains(word.charAt(i))){
@@ -130,13 +144,16 @@ public class Game extends AppCompatActivity {
         return true;
     }
 
+    /*
+    Checks if the player has lost by checking how many pictures that are left
+     */
     public boolean hasLost(){
-        if(PICS.length-1 == imageIndex){
-           return true;
-        }
-        return false;
+        return PICS.length - 1 == imageIndex;
     }
 
+    /*
+    Rolling the next picture and checking if there is any pictures left.
+     */
     public void nextPictures(){
         if(imageIndex < PICS.length-1) {
             imageIndex++;
@@ -144,6 +161,9 @@ public class Game extends AppCompatActivity {
         Picasso.get().load(PICS[imageIndex]).into(imageView);
     }
 
+    /*
+    Gets a random word form the class word factory.
+     */
     public String generateWord() {
          return WordFactory.genWord(getApplicationContext());
     }
