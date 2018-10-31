@@ -21,7 +21,6 @@ import java.util.List;
 
 public class Game extends AppCompatActivity {
 
-    private Button guessButton;
     private EditText guessLetter;
     private TextView wordGuessText;
     private TextView letterTextView;
@@ -57,7 +56,7 @@ public class Game extends AppCompatActivity {
         /*
         Created functions to the buttons in the game.
          */
-        guessButton = findViewById(R.id.guessButton);
+        Button guessButton = findViewById(R.id.guessButton);
         guessLetter = findViewById(R.id.guessLetterEditText);
         guessButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +71,7 @@ public class Game extends AppCompatActivity {
     Checking if the input is valid or not.
     Checking if the letter has been used or not and if the input is more then 1 letter
     Printing out to player if those conditions has been meet with a "warning"
-    If won/loss takes you to Finishscreen and shows a message
+    If won/loss takes you to Finish screen and shows a message
      */
     public void guess(String guess) {
         if (guess.length() != 1) {
