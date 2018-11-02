@@ -18,6 +18,7 @@
     <string name="anton" translatable="false">Anton</string>
     <string name="pictures" translatable="false">Pictures</string>
     <string name="letter" translatable="false">letter</string>
+    <string name="back_to_the_meny" translatable="false">Back to the meny</string>
 
 
     <string-array name="gissa">

@@ -28,4 +28,7 @@
     <string name="wrong_word">"Ordet du letade efter var: "</string>
     <string name="made_by">Gjord av</string>
     <string name="anton">Anton</string>
+    <string name="back_to_the_meny" translatable="false">Tillbaka till menyn</string>
+    <string name="letter" translatable="false">Bokstav</string>
+    <string name="pictures" translatable="false">Bild</string>
 </resources>

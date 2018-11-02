@@ -88,6 +88,7 @@ public class Game extends AppCompatActivity {
             if(hasWon()){
                 Intent intent = new Intent(this, FinishScreen.class);
                 intent.putExtra("won", true);
+                intent.putExtra("word", word);
                 startActivity(intent);
             } else if(hasLost()) {
                 Intent intent = new Intent(this, FinishScreen.class);
